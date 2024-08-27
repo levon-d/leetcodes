@@ -3,11 +3,11 @@ class Solution {
         int current = prices[0];
         int maxProfitMade = 0;
 
-        for (int i=1; i<prices.length; i++) { 
-            if (prices[i] > current) { 
-                maxProfitMade = maxProfitMade + prices[i] - current;
+        for (int j=1; j<prices.length; j++) { 
+            if (prices[j] > current) { 
+                maxProfitMade = maxProfitMade + prices[j] - current;
             }
-            current = prices[i];
+            current = prices[j];
         }    
         return maxProfitMade;
     }
